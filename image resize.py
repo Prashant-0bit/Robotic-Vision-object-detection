@@ -2,7 +2,7 @@ import cv2
 import glob
 import os
 
-inputFolder = r'C:\Users\Besitzer\OneDrive\Desktop\Task\p'
+inputFolder = r'//your directory
 os.mkdir('p')
 
 i=0
