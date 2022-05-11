@@ -1,7 +1,7 @@
 import cv2 as cv
 import numpy as np
 
-img = cv.imread('E:/1.jpg')
+img = cv.imread('E:/1.jpg')  //read your own image
 cv.imshow('1', img)
 
 gray = cv.cvtColor(img, cv.COLOR_BGR2GRAY)
@@ -13,7 +13,7 @@ lap = np.uint8(np.absolute(lap))
 cv.imshow('Laplacian', lap)
 
 # Sobel
-sobelx = cv.Sobel(gray, cv.CV_64F, 1, 0)
+sobelx = cv.Sobel(gray, cv.CV_64F, 1, 0)  //for 2D different axis
 sobely = cv.Sobel(gray, cv.CV_64F, 0, 1)
 combined_sobel = cv.bitwise_or(sobelx, sobely)
 
