@@ -1,7 +1,7 @@
 import cv2 as cv
 import numpy as np
 
-img = cv.imread('E:/1.jpg')  //read your own image
+img = cv.imread('E:/1.jpg')  //upload your own image
 cv.imshow('1', img)
 
 gray = cv.cvtColor(img, cv.COLOR_BGR2GRAY)
